@@ -1,0 +1,22 @@
+/* CSS for modal animation */
+.modal-animate {
+  animation: modalUp 0.3s ease-out;
+}
+
+@keyframes modalUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Modal background blur effect when the modal is open */
+.modal-backdrop {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.modal.show .modal-backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
